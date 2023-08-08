@@ -42,9 +42,11 @@
       "target": "api::link.link",
       "mappedBy": "account"
     },
-    "password": {
-      "type": "password",
-      "required": true
+    "pin": {
+      "required": true,
+      "min": 6,
+      "unique": false,
+      "type": "integer"
     }
   }
 }
